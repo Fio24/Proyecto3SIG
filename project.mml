@@ -1,0 +1,287 @@
+{
+  "bounds": [
+    -180,
+    -85.05112877980659,
+    180,
+    85.05112877980659
+  ],
+  "center": [
+    0,
+    0,
+    2
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "distritos",
+    "template_teaser": "Canton: {{{NCANTON}}} <br/>\nDistrito: {{{NDISTRITO}}}  <br/>\nPoblación 2000 del distrito: {{{POB_2000_M}}}"
+  },
+  "minzoom": 0,
+  "maxzoom": 22,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
+        "type": "shape"
+      }
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -85.94407720083333,
+        8.053889694166667,
+        -82.60958632194443,
+        11.222161511666666
+      ],
+      "id": "base",
+      "class": "base",
+      "Datasource": {
+        "file": "\\Users\\fiore\\Desktop\\IIS2022\\SIG\\Proyecto3\\geoHitosAspecto.geotiff"
+      },
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "base"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -85.95054228599997,
+        8.039934009000035,
+        -82.55303058099997,
+        11.219929437000076
+      ],
+      "id": "provincias",
+      "class": "provincias",
+      "Datasource": {
+        "file": "\\Users\\fiore\\Desktop\\IIS2022\\SIG\\Proyecto3\\Geo_CR\\geo_provincias.shp",
+        "id": "provincias",
+        "project": "Proyecto3",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "provincias"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -85.95023210896494,
+        8.039626096449929,
+        -82.55270240635103,
+        11.219870492415401
+      ],
+      "id": "cantones",
+      "class": "cantones",
+      "Datasource": {
+        "file": "\\Users\\fiore\\Desktop\\IIS2022\\SIG\\Proyecto3\\Geo_CR\\geo_cantones.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "cantones"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -85.97911670198367,
+        8.041215038186007,
+        -82.55246223444736,
+        11.219775470856481
+      ],
+      "id": "distritos",
+      "class": "distritos",
+      "Datasource": {
+        "file": "\\Users\\fiore\\Desktop\\IIS2022\\SIG\\Proyecto3\\Geo_CR\\geo_distritos.shp",
+        "id": "distritos",
+        "project": "Proyecto3",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "distritos"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -85.8429665493439,
+        8.061197854210377,
+        -82.60619720046552,
+        11.214783645239182
+      ],
+      "id": "carreteras",
+      "class": "carreteras",
+      "Datasource": {
+        "file": "\\Users\\fiore\\Desktop\\IIS2022\\SIG\\Proyecto3\\Geo_CR\\geo_carreter.shp",
+        "id": "carreteras",
+        "project": "Proyecto3",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "carreteras"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -85.847321839383,
+        9.782576744254353,
+        -84.79436963605175,
+        11.126887404273562
+      ],
+      "id": "rios",
+      "class": "rios",
+      "Datasource": {
+        "file": "\\Users\\fiore\\Desktop\\IIS2022\\SIG\\Proyecto3\\rios\\riosGuanacaste.shp",
+        "id": "rios",
+        "project": "Proyecto3",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "rios"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -85.83074583223924,
+        8.440523676742806,
+        -82.7814562033473,
+        11.077173509968649
+      ],
+      "id": "bancos",
+      "class": "bancos",
+      "Datasource": {
+        "file": "\\Users\\fiore\\Desktop\\IIS2022\\SIG\\Proyecto3\\agenbancos2008crtm05\\agenbancos2008crtm05.shp",
+        "id": "bancos",
+        "project": "Proyecto3",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "bancos"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -85.6988668395502,
+        8.488383098107358,
+        -82.60580432869303,
+        11.073599079952315
+      ],
+      "id": "clinicas",
+      "class": "clinicas",
+      "Datasource": {
+        "file": "\\Users\\fiore\\Desktop\\IIS2022\\SIG\\Proyecto3\\clinicas2008crtm05\\clinicas2008crtm05.shp",
+        "id": "clinicas",
+        "project": "Proyecto3",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "clinicas"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -85.78510339708112,
+        8.215937966794055,
+        -82.59467931138748,
+        11.18364941250716
+      ],
+      "id": "escuelas",
+      "class": "escuelas",
+      "Datasource": {
+        "file": "\\Users\\fiore\\Desktop\\IIS2022\\SIG\\Proyecto3\\escuelasdiurnas2008\\escuelasdiurnas2008\\escuelasdiurnas2008.shp",
+        "id": "escuelas",
+        "project": "Proyecto3",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "escuelas"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -85.44700276473756,
+        8.637752775552961,
+        -82.93816213451083,
+        11.030871970707613
+      ],
+      "id": "hospitales",
+      "class": "hospitales",
+      "Datasource": {
+        "file": "\\Users\\fiore\\Desktop\\IIS2022\\SIG\\Proyecto3\\hospitales2008crtm05\\hospitales2008crtm05.shp",
+        "id": "hospitales",
+        "project": "Proyecto3",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "hospitales"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -85.82629569296081,
+        9.88136610496256,
+        -84.94178269287858,
+        11.072992146183568
+      ],
+      "id": "gasolineras",
+      "class": "gasolineras",
+      "Datasource": {
+        "file": "\\Users\\fiore\\Desktop\\IIS2022\\SIG\\Proyecto3\\gasolineras\\gasolinerasGuanacaste.shp",
+        "id": "gasolineras",
+        "project": "Proyecto3",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "gasolineras"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -85.85015021978413,
+        9.8184340102379,
+        -84.89306349493602,
+        11.100541920670441
+      ],
+      "id": "hoteles",
+      "class": "hoteles",
+      "Datasource": {
+        "file": "\\Users\\fiore\\Desktop\\IIS2022\\SIG\\Proyecto3\\hoteles\\hotelesGuanacaste.shp",
+        "id": "hoteles",
+        "project": "Proyecto3",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "hoteles"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "Proyecto3",
+  "description": "",
+  "legend": ""
+}
