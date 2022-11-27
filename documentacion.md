@@ -16,16 +16,14 @@ Estudiantes:
 - - -
 
 Link del mapa: https://fio24.github.io/Proyecto3SIG/ \
-Link del github con todos los archvios respectivos: https://github.com/Fio24/Proyecto3SIG
+Link del github con todos los archivos respectivos: https://github.com/Fio24/Proyecto3SIG
 
 
 ## Proceso de generación del Mapa
 De imagen base se tiene un mapa de Costa Rica de colores de aspecto. Dicho mapa se generó mediante interpolación a partir del archivo de geo_hitoz.zip. 
+Para las capas de poligonos,se utilizaron mapas de provincias, cantones y distritos. Luego para las capas de lineas, se utilizaron los archivos de carreteras y rios. En último lugar, para los elementos puntuales, consisten en las capas de escuelas, hospitales, poblados, clinicas, gasolineras, hoteles y agencias bancarias. 
 
-Como imagen base del mapa de Costa Rica se deberá utilizar un mapa de colores de altitud, relieve sombreado, aspecto ó pendiente. Todos estos mapas se pueden generar mediante interpolación a partir del archivo llamado geo_hitos.zip que se encuentra en el repositorio del curso.
-Para las capas de poligonos,se utilizaron mapas de provincias, cantones y distritos. Luego para las capas de lineas, se utilizaron los archivos de carrerteras y rios. En último lugar, para los elementos puntuales, consisten en las capas de escuelas, hospitales, poblados, clinicas, gasolineras, hoteles y agencais bancarias. 
-
-Es importante recalcar que no todos los archivos de datos traían una columna con la provincia respectiva para el fácil filtrado al importart a Tilemill. Por lo tanto, los archivos que no tenían dicha columna, se filtraron en grass. Primero, con el comando **v.exctract** se aisló la provincia de Guanacaste del archivo geo_provincias,shp. Esto nos permite tener el polgiono de Guanacaste solo, luego con el comando v.select y el option **operator=within** pudimos filtrar los elementos y crear un nuevo mapa vectorial con únicamente aquellos dentro de Guanacaste.
+Es importante recalcar que no todos los archivos de datos traían una columna con la provincia respectiva para el fácil filtrado al importart a Tilemill. Por lo tanto, los archivos que no tenían dicha columna, se filtraron en grass. Primero, con el comando **v.exctract** se aisló la provincia de Guanacaste del archivo geo_provincias,shp. Esto nos permite tener el poligono de Guanacaste solo, luego con el comando v.select y el option **operator=within** pudimos filtrar los elementos y crear un nuevo mapa vectorial con únicamente aquellos dentro de Guanacaste.
 
 
 ## Detalles
