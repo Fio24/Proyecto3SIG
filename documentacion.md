@@ -15,7 +15,7 @@ Estudiantes:
 
 - - -
 
-Link del mapa: https://fio24.github.io/Proyecto3SIG/
+Link del mapa: https://fio24.github.io/Proyecto3SIG/ \
 Link del github con todos los archvios respectivos: https://github.com/Fio24/Proyecto3SIG
 
 
