@@ -32,6 +32,7 @@ Las lineas del poligono de la provincia de Guanacaste tienen un color #255 y apa
 Las lineas de los poligonos de cantones tienen un color de  #0000FF y aparecen cuando el nivel de zoom es 9 o 10.
 
 Las lineas de lo poligonos de distritos tienen un color de #000 y aparecen cuando el nivel de zoom es Mayor que 10. Con el grosor de la linea cambiando si es menor o mayor que 12.
+Cabe resaltar que si se hace click sobre el nombre del distrito, se muestran los datos de población del mismo, y el cantón al que pertenece.
 
 Las carreteras NACIONALES tienen un color de #b88b5c y aparecen con un nivel de zoom de 12 o 13.
 Las carreteras CANTONALES tienen un color de #908c44 y aparacen con un nivel de zoom de 12 o 13.
